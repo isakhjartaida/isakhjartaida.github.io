@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/isakhjartaida.github.io/static/css/main.5f361e03.chunk.css",
+    "main.js": "/isakhjartaida.github.io/static/js/main.cf99a0f7.chunk.js",
+    "main.js.map": "/isakhjartaida.github.io/static/js/main.cf99a0f7.chunk.js.map",
+    "runtime-main.js": "/isakhjartaida.github.io/static/js/runtime-main.2f063848.js",
+    "runtime-main.js.map": "/isakhjartaida.github.io/static/js/runtime-main.2f063848.js.map",
+    "static/js/2.cefe79ff.chunk.js": "/isakhjartaida.github.io/static/js/2.cefe79ff.chunk.js",
+    "static/js/2.cefe79ff.chunk.js.map": "/isakhjartaida.github.io/static/js/2.cefe79ff.chunk.js.map",
+    "index.html": "/isakhjartaida.github.io/index.html",
+    "precache-manifest.3b1088f604224fb2400d4e69922fc7fe.js": "/isakhjartaida.github.io/precache-manifest.3b1088f604224fb2400d4e69922fc7fe.js",
+    "service-worker.js": "/isakhjartaida.github.io/service-worker.js",
+    "static/css/main.5f361e03.chunk.css.map": "/isakhjartaida.github.io/static/css/main.5f361e03.chunk.css.map",
+    "static/js/2.cefe79ff.chunk.js.LICENSE.txt": "/isakhjartaida.github.io/static/js/2.cefe79ff.chunk.js.LICENSE.txt",
+    "static/media/logo.svg": "/isakhjartaida.github.io/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2f063848.js",
+    "static/js/2.cefe79ff.chunk.js",
+    "static/css/main.5f361e03.chunk.css",
+    "static/js/main.cf99a0f7.chunk.js"
+  ]
+}
