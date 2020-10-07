@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "fac6759cb3000f8ce09ced2903720b2d",
+    "revision": "8ce253cadf92b6a9054cd5e0759533c6",
     "url": "/isakhjartaida.github.io/index.html"
   },
   {
-    "revision": "01016fbff6cd1a4f0055",
+    "revision": "b92ff997c8def12836cf",
     "url": "/isakhjartaida.github.io/static/css/main.5ecd60fb.chunk.css"
   },
   {
@@ -16,8 +16,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/isakhjartaida.github.io/static/js/2.c1fc4352.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "01016fbff6cd1a4f0055",
-    "url": "/isakhjartaida.github.io/static/js/main.6d7816e2.chunk.js"
+    "revision": "b92ff997c8def12836cf",
+    "url": "/isakhjartaida.github.io/static/js/main.338c305a.chunk.js"
   },
   {
     "revision": "6fde8a2e5517cdba3030",
