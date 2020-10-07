@@ -27,7 +27,7 @@ function App() {
       >
         <FavoriteIcon
           color="primary"
-          style={{ fontSize: 64 }}
+          style={{ fontSize: 56 }}
         />
       </Box>
     </ThemeProvider>
