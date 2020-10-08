@@ -6,17 +6,15 @@ import Countdown from 'react-countdown';
 
 const cdUseStyles = makeStyles((theme) => ({
   root: {
-    ...theme.typography,
-    fontFamily: ['charter, Roboto'],
+    fontFamily: ['Peddana, Roboto'],
     fontSize: 24,
   },
 }));
 
 const bdeUseStyles = makeStyles((theme) => ({
   root: {
-    ...theme.typography,
-    fontFamily: ['charter, Roboto'],
-    fontSize: 32,
+    fontFamily: ['Peddana, Roboto'],
+    fontSize: 36,
   },
 }));
 
