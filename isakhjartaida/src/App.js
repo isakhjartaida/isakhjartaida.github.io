@@ -2,6 +2,7 @@ import React from 'react';
 
 import { Container, Box } from '@material-ui/core';
 import { ReactComponent as Logo } from './assets/logga.svg';
+import HeaderImg from './assets/isak_ida_1.jpg';
 
 import Theme from './Theme';
 import Time from './Time';
@@ -9,20 +10,30 @@ import Time from './Time';
 function App() {
   return (
     <Theme>
-      <Box
-        display="flex"
-        justifyContent="center"
-        alignItems="center"
-        with="100vw"
-        height="100vh"
-        flexDirection="column"
+      <Container
+        maxWidth="sm"
       >
-        <Container maxWidth="sm">
+        <Box
+          display="flex"
+          alignItems="center"
+          flexDirection="column"
+        >
+          <Box
+            height={450}
+            padding={2}
+          >
+            <img
+              style={{border: '5px solid #FFF'}}
+              height="100%"
+              src={HeaderImg}
+              alt="Isak och Ida"
+            />
+          </Box>
           <Logo />
-        </Container>
 
-        <Time />
-      </Box>
+          <Time />
+        </Box>
+      </Container>
     </Theme>
   );
 }
