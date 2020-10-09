@@ -1,27 +1,31 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "ac9a62175607f4f4a2f6810bd44f1a4c",
+    "revision": "9cbd783f2c1723a41c8b7faa0c485c19",
     "url": "/isakhjartaida.github.io/index.html"
   },
   {
-    "revision": "258dee5bfb2793c1c416",
+    "revision": "3d17807186195b0d4edf",
     "url": "/isakhjartaida.github.io/static/css/main.5ecd60fb.chunk.css"
   },
   {
-    "revision": "5c9cbff09e775e0967bb",
-    "url": "/isakhjartaida.github.io/static/js/2.a9773da8.chunk.js"
+    "revision": "02f9aaf8bf1931727596",
+    "url": "/isakhjartaida.github.io/static/js/2.d584832d.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/isakhjartaida.github.io/static/js/2.a9773da8.chunk.js.LICENSE.txt"
+    "url": "/isakhjartaida.github.io/static/js/2.d584832d.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "258dee5bfb2793c1c416",
-    "url": "/isakhjartaida.github.io/static/js/main.e023ecec.chunk.js"
+    "revision": "3d17807186195b0d4edf",
+    "url": "/isakhjartaida.github.io/static/js/main.6a2119de.chunk.js"
   },
   {
     "revision": "6fde8a2e5517cdba3030",
     "url": "/isakhjartaida.github.io/static/js/runtime-main.2f063848.js"
+  },
+  {
+    "revision": "72f675059ec79dbb38304f062f20dfe8",
+    "url": "/isakhjartaida.github.io/static/media/isak_ida_1.72f67505.jpg"
   },
   {
     "revision": "fe3a15f3b7fcd6dfd9e7e0fb510ff39c",
