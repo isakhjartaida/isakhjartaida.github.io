@@ -1,11 +1,12 @@
 import React from 'react';
 
-import { Container, Box } from '@material-ui/core';
+import { Container, Box, Typography } from '@material-ui/core';
 import { ReactComponent as Logo } from './assets/logga.svg';
 import HeaderImg from './assets/isak_ida_1.jpg';
 
 import Theme from './Theme';
 import Time from './Time';
+import NotifyMe from './NotifyMe';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
           display="flex"
           alignItems="center"
           flexDirection="column"
+          marginBottom={5}
         >
           <Box
             height={450}
@@ -32,6 +34,8 @@ function App() {
           <Logo />
 
           <Time />
+
+          <NotifyMe />
         </Box>
       </Container>
     </Theme>
