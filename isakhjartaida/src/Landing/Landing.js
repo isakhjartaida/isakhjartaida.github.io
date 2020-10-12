@@ -4,6 +4,8 @@ import { Box, Typography } from '@material-ui/core';
 
 import { ReactComponent as Logo } from 'assets/logga.svg';
 import HeaderImg from 'assets/isak_ida_1.jpg';
+import FlowerLeft from 'assets/flower_left.png';
+import FlowerRight from 'assets/flower_right.png';
 
 const useStyles = makeStyles((theme) => ({
   date: {
@@ -24,16 +26,39 @@ export default function NotifyMe() {
           width="100%"
         >
           <Box
-            minHeight={450}
-            height="50vh"
+            height={450}
             padding={2}
+            display="flex"
           >
+            <Box
+              marginRight="-29px"
+              height="100%"
+              zIndex={2}
+            >
+              <img
+                src={FlowerLeft}
+                height={450}
+              />
+            </Box>
+
             <img
               style={{border: '5px solid #FFF'}}
-              height="100%"
+              height={400}
               src={HeaderImg}
               alt="Isak och Ida"
             />
+
+            <Box
+              marginLeft="-24px"
+              height="100%"
+              zIndex={2}
+            >
+              <img
+                src={FlowerRight}
+                height={450}
+              />
+            </Box>
+
           </Box>
 
           <Logo />
