@@ -1,15 +1,20 @@
 import React, { useEffect, useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Box, TextField, Button, Typography, Paper } from '@material-ui/core';
+import { Box, Typography, Paper } from '@material-ui/core';
+import Skeleton from '@material-ui/lab/Skeleton';
 import axios from 'axios';
+
+import Form from './Form';
 
 const FORM_URL = 'https://cors-anywhere.herokuapp.com/https://docs.google.com/forms/d/e/1FAIpQLSfQC24BD9tqflJVnVsth96TFfZkhrFzAxdkMfTVjJ9loFCYow/formResponse';
 
-const postGoogleForm = (email, setSend) => {
+const postGoogleForm = (email, setSendStatus) => {
   let data = new FormData();
   data.append('emailAddress', email);
   axios.post(FORM_URL, new URLSearchParams(data)).then((res) => {
-    setSend('sent');
+    setSendStatus('sent');
+  }).catch(() => {
+    setSendStatus('error');
   });
 }
 
@@ -23,52 +28,66 @@ export default function NotifyMe() {
   const classes = useStyles();
 
   const [email, setEmail] = useState(undefined);
-  const [send, setSend] = useState(undefined);
+  const [sendStatus, setSendStatus] = useState(undefined);
 
   useEffect(() => {
-    if (email && email.length > 0 && send === 'send') {
-      postGoogleForm(email, setSend)
+    if (email && email.length > 0 && sendStatus === 'send') {
+      postGoogleForm(email, setSendStatus)
     }
-  }, [email, send]);
+  }, [email, sendStatus]);
+
+  let EmailComponent = <></>;
+  switch(sendStatus) {
+    case 'send':
+      EmailComponent = (
+        <Box>
+          <Skeleton />
+        </Box>
+      );
+      break;
+    case 'sent':
+      EmailComponent = (
+        <Typography>
+          Sådär! Vi hör av oss så fort vi vet något mer <span role="img" aria-label="love-letter">💌</span>
+        </Typography>
+      );
+      break;
+    case 'error':
+      EmailComponent = (
+        <Box>
+          <Box marginBottom={2}>
+            <Typography>
+              Åh nej, något gick fel <span role="img" aria-label="scream">😱</span> Skrev du rätt e-mail?
+            </Typography>
+          </Box>
+          <Form
+            email={email}
+            setEmail={setEmail}
+            setSendStatus={setSendStatus}
+          />
+        </Box>
+      );
+      break;
+    default:
+      EmailComponent = (
+        <Form
+          setEmail={setEmail}
+          setSendStatus={setSendStatus}
+        />
+      );
+      break;
+  }
 
   return (
     <Box width="100%">
       <Paper className={classes.NotifyMe}>
         <Box marginBottom={3}>
           <Typography>
-            Fyll i din email-address för att få ett email när det finns ny information, tex. när OSA öppnar <span role="img" aria-label="Tada">🎉</span>
+            Fyll gärna i din email-adress för att få ett email när det finns ny information, tex. när OSA öppnar <span role="img" aria-label="Tada">🎉</span>
           </Typography>
         </Box>
-        { send === 'sent' ?
-          <Typography>Tack!</Typography>
-        :
-          <Box
-            display="flex"
-            flexDirection="column"
-            alignItems="flex-end"
-          >
-            <TextField
-              id="email"
-              label="e-mail"
-              placeholder="Skriv din email här"
-              variant="outlined"
-              fullWidth
-              InputLabelProps={{
-                shrink: true,
-              }}
-              onChange={(e) => { setEmail(e.target.value) }}
-            />
-            <Box margin={2}>
-              <Button
-                variant="contained"
-                color="primary"
-                onClick={() => { setSend('send') }}
-              >
-                Meddela mig
-              </Button>
-            </Box>
-          </Box>
-        }
+
+        { EmailComponent }
       </Paper>
     </Box>
   );
