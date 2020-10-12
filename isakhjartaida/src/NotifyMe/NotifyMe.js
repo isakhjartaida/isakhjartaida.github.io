@@ -48,7 +48,7 @@ export default function NotifyMe() {
     case 'sent':
       EmailComponent = (
         <Typography>
-          Sådär! Vi hör av oss så fort vi vet något mer <span role="img" aria-label="love-letter">💌</span>
+          ✅ Sådär, vi har noterat din mailadress! Vi hör av oss så fort vi vet något mer <span role="img" aria-label="love-letter">💌</span>
         </Typography>
       );
       break;
@@ -57,7 +57,7 @@ export default function NotifyMe() {
         <Box>
           <Box marginBottom={2}>
             <Typography>
-              Åh nej, något gick fel <span role="img" aria-label="scream">😱</span> Skrev du rätt e-mail?
+              Åh nej, något gick fel <span role="img" aria-label="scream">😱</span> Skrev du rätt?
             </Typography>
           </Box>
           <Form
@@ -83,7 +83,7 @@ export default function NotifyMe() {
       <Paper className={classes.NotifyMe}>
         <Box marginBottom={3}>
           <Typography>
-            Fyll gärna i din email-adress för att få ett email när det finns ny information, tex. när OSA öppnar <span role="img" aria-label="Tada">🎉</span>
+            Fyll gärna i din mailadress för att få ett email när det finns ny information, tex. när OSA öppnar <span role="img" aria-label="Tada">🎉</span>
           </Typography>
         </Box>
 
