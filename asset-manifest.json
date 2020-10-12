@@ -1,24 +1,24 @@
 {
   "files": {
-    "main.css": "/isakhjartaida.github.io/static/css/main.5ecd60fb.chunk.css",
-    "main.js": "/isakhjartaida.github.io/static/js/main.a0e74281.chunk.js",
-    "main.js.map": "/isakhjartaida.github.io/static/js/main.a0e74281.chunk.js.map",
-    "runtime-main.js": "/isakhjartaida.github.io/static/js/runtime-main.2f063848.js",
-    "runtime-main.js.map": "/isakhjartaida.github.io/static/js/runtime-main.2f063848.js.map",
-    "static/js/2.8829e551.chunk.js": "/isakhjartaida.github.io/static/js/2.8829e551.chunk.js",
-    "static/js/2.8829e551.chunk.js.map": "/isakhjartaida.github.io/static/js/2.8829e551.chunk.js.map",
-    "index.html": "/isakhjartaida.github.io/index.html",
-    "precache-manifest.b7caafb47975d621ff2233485686a598.js": "/isakhjartaida.github.io/precache-manifest.b7caafb47975d621ff2233485686a598.js",
-    "service-worker.js": "/isakhjartaida.github.io/service-worker.js",
-    "static/css/main.5ecd60fb.chunk.css.map": "/isakhjartaida.github.io/static/css/main.5ecd60fb.chunk.css.map",
-    "static/js/2.8829e551.chunk.js.LICENSE.txt": "/isakhjartaida.github.io/static/js/2.8829e551.chunk.js.LICENSE.txt",
-    "static/media/isak_ida_1.jpg": "/isakhjartaida.github.io/static/media/isak_ida_1.72f67505.jpg",
-    "static/media/logga.0f11065e.svg": "/isakhjartaida.github.io/static/media/logga.0f11065e.svg"
+    "main.css": "/static/css/main.5ecd60fb.chunk.css",
+    "main.js": "/static/js/main.2ea37a7c.chunk.js",
+    "main.js.map": "/static/js/main.2ea37a7c.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.881ef219.js",
+    "runtime-main.js.map": "/static/js/runtime-main.881ef219.js.map",
+    "static/js/2.8829e551.chunk.js": "/static/js/2.8829e551.chunk.js",
+    "static/js/2.8829e551.chunk.js.map": "/static/js/2.8829e551.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.cbf864d391ebb109a107a528204194d6.js": "/precache-manifest.cbf864d391ebb109a107a528204194d6.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.5ecd60fb.chunk.css.map": "/static/css/main.5ecd60fb.chunk.css.map",
+    "static/js/2.8829e551.chunk.js.LICENSE.txt": "/static/js/2.8829e551.chunk.js.LICENSE.txt",
+    "static/media/isak_ida_1.jpg": "/static/media/isak_ida_1.72f67505.jpg",
+    "static/media/logga.0f11065e.svg": "/static/media/logga.0f11065e.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.2f063848.js",
+    "static/js/runtime-main.881ef219.js",
     "static/js/2.8829e551.chunk.js",
     "static/css/main.5ecd60fb.chunk.css",
-    "static/js/main.a0e74281.chunk.js"
+    "static/js/main.2ea37a7c.chunk.js"
   ]
 }
