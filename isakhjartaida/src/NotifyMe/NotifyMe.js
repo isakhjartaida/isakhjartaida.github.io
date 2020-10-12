@@ -42,8 +42,7 @@ export default function NotifyMe() {
     >
       <Box marginBottom={3}>
         <Typography>
-          Om du få ett email när det finns ny information, tex. när OSA öppnar.
-          Fyll i din email-adress!
+          Fyll i din email-address för att få ett email när det finns ny information, tex. när OSA öppnar <span role="img" aria-label="Tada">🎉</span>
         </Typography>
       </Box>
       { send === 'sent' ?
