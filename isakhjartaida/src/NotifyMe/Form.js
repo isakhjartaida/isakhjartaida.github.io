@@ -12,8 +12,9 @@ export default function Form(props) {
     >
       <TextField
         id="email"
+        type="email"
         label="email"
-        value={email}
+        value={email || ""}
         placeholder="Skriv din email här"
         variant="outlined"
         fullWidth
@@ -27,6 +28,7 @@ export default function Form(props) {
           variant="contained"
           color="primary"
           onClick={() => { setSendStatus('send') }}
+          disabled={!email || (email && email.length <= 0)}
         >
           Meddela mig
         </Button>

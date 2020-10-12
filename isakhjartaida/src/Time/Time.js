@@ -29,6 +29,7 @@ export default function Time() {
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
+        marginBottom={4}
       >
         { days > 0 &&
           <Typography className={classes.countdown}>
@@ -37,10 +38,6 @@ export default function Time() {
         }
         <Typography className={classes.bestDayEver}>
           BEST DAY EVER
-        </Typography>
-
-        <Typography variant="h1" component="h2" className={classes.peddana}>
-          2020-07-17
         </Typography>
       </Box>
     );

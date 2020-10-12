@@ -19,7 +19,7 @@ const postGoogleForm = (email, setSendStatus) => {
 }
 
 const useStyles = makeStyles((theme) => ({
-  NotifyMe: {
+  root: {
     padding: theme.spacing(2),
   },
 }));
@@ -33,6 +33,8 @@ export default function NotifyMe() {
   useEffect(() => {
     if (email && email.length > 0 && sendStatus === 'send') {
       postGoogleForm(email, setSendStatus)
+    } else if (!email || (email && email.length <= 0)) {
+      setSendStatus(undefined);
     }
   }, [email, sendStatus]);
 
@@ -48,7 +50,7 @@ export default function NotifyMe() {
     case 'sent':
       EmailComponent = (
         <Typography>
-          ✅ Sådär, vi har noterat din mailadress! Vi hör av oss så fort vi vet något mer <span role="img" aria-label="love-letter">💌</span>
+          <span role="img" aria-label="green-check">✅</span> Sådär, vi har noterat din mailadress! Vi hör av oss så fort vi vet något mer <span role="img" aria-label="love-letter">💌</span>
         </Typography>
       );
       break;
@@ -71,6 +73,7 @@ export default function NotifyMe() {
     default:
       EmailComponent = (
         <Form
+          email={email}
           setEmail={setEmail}
           setSendStatus={setSendStatus}
         />
@@ -80,7 +83,7 @@ export default function NotifyMe() {
 
   return (
     <Box width="100%">
-      <Paper className={classes.NotifyMe}>
+      <Paper className={classes.root}>
         <Box marginBottom={3}>
           <Typography>
             Fyll gärna i din mailadress för att få ett email när det finns ny information, tex. när OSA öppnar <span role="img" aria-label="Tada">🎉</span>
