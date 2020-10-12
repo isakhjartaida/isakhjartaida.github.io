@@ -31,7 +31,9 @@ function App() {
               alt="Isak och Ida"
             />
           </Box>
-          <Logo />
+          <Box width="90%">
+            <Logo />
+          </Box>
 
           <Time />
 

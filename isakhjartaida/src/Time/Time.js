@@ -4,23 +4,23 @@ import { makeStyles } from '@material-ui/core/styles';
 
 import Countdown from 'react-countdown';
 
-const cdUseStyles = makeStyles((theme) => ({
-  root: {
+const useStyles = makeStyles((theme) => ({
+  peddana: {
     fontFamily: ['Peddana, Roboto'],
-    fontSize: 24,
   },
-}));
-
-const bdeUseStyles = makeStyles((theme) => ({
-  root: {
+  countdown: {
     fontFamily: ['Peddana, Roboto'],
-    fontSize: 36,
+    fontSize: 42,
+    lineHeight: 1
   },
+  bestDayEver: {
+    fontFamily: ['Peddana, Roboto'],
+    fontSize: 48,
+  }
 }));
 
 export default function Time() {
-  const cdClasses = cdUseStyles();
-  const bdeClasses = bdeUseStyles();
+  const classes = useStyles();
   
   const renderer = ({ days }) => {
     return (
@@ -31,12 +31,16 @@ export default function Time() {
         alignItems="center"
       >
         { days > 0 &&
-          <Typography className={cdClasses.root}>
+          <Typography className={classes.countdown}>
             {days} days until
           </Typography>
         }
-        <Typography className={bdeClasses.root}>
+        <Typography className={classes.bestDayEver}>
           BEST DAY EVER
+        </Typography>
+
+        <Typography variant="h1" component="h2" className={classes.peddana}>
+          2020-07-17
         </Typography>
       </Box>
     );
