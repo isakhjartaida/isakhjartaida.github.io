@@ -38,6 +38,7 @@ export default function NotifyMe() {
         >
           <img
             src={FlowerLeft}
+            alt="flower-left"
             height={450}
           />
         </Box>
@@ -56,6 +57,7 @@ export default function NotifyMe() {
         >
           <img
             src={FlowerRight}
+            alt="flower-right"
             height={450}
           />
         </Box>
