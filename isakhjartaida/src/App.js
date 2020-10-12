@@ -10,17 +10,19 @@ import NotifyMe from './NotifyMe';
 function App() {
   return (
     <Theme>
-      <Container
-        maxWidth="sm"
-      >
-        <Landing />
+      <Box overflow="hidden">
+        <Container
+          maxWidth="sm"
+        >
+          <Landing />
 
-        <Time />
+          <Time />
 
-        <NotifyMe />
+          <NotifyMe />
 
-        <Box marginTop={4}></Box>
-      </Container>
+          <Box marginTop={4}></Box>
+        </Container>
+      </Box>
     </Theme>
   );
 }

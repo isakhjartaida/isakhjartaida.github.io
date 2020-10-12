@@ -19,57 +19,58 @@ export default function NotifyMe() {
 
   return (
     <Box
-          minHeight="100vh"
-          display="flex"
-          alignItems="center"
-          flexDirection="column"
-          width="100%"
+      minHeight="100vh"
+      display="flex"
+      alignItems="center"
+      flexDirection="column"
+      width="100%"
+    >
+      <Box
+        height={450}
+        padding={2}
+        display="flex"
+        alignItems="center"
+      >
+        <Box
+          marginRight="-29px"
+          height="100%"
+          zIndex={2}
         >
-          <Box
+          <img
+            src={FlowerLeft}
             height={450}
-            padding={2}
-            display="flex"
-          >
-            <Box
-              marginRight="-29px"
-              height="100%"
-              zIndex={2}
-            >
-              <img
-                src={FlowerLeft}
-                height={450}
-              />
-            </Box>
-
-            <img
-              style={{border: '5px solid #FFF'}}
-              height={400}
-              src={HeaderImg}
-              alt="Isak och Ida"
-            />
-
-            <Box
-              marginLeft="-24px"
-              height="100%"
-              zIndex={2}
-            >
-              <img
-                src={FlowerRight}
-                height={450}
-              />
-            </Box>
-
-          </Box>
-
-          <Logo />
-
-          <Typography
-            variant="h2"
-            className={classes.date}
-          >
-            2021-07-17
-          </Typography>
-
+          />
         </Box>
+
+        <img
+          style={{border: '5px solid #FFF'}}
+          height={400}
+          src={HeaderImg}
+          alt="Isak och Ida"
+        />
+
+        <Box
+          marginLeft="-24px"
+          height="100%"
+          zIndex={2}
+        >
+          <img
+            src={FlowerRight}
+            height={450}
+          />
+        </Box>
+
+      </Box>
+
+      <Logo />
+
+      <Typography
+        variant="h2"
+        className={classes.date}
+      >
+        2021-07-17
+      </Typography>
+
+    </Box>
   );
 }
