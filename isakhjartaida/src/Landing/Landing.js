@@ -51,7 +51,7 @@ export default function NotifyMe() {
         />
 
         <Box
-          marginLeft="-24px"
+          marginLeft="-25px"
           height="100%"
           zIndex={2}
         >
