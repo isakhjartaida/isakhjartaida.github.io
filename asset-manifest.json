@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.js": "/static/js/main.deaf25ac.chunk.js",
-    "main.js.map": "/static/js/main.deaf25ac.chunk.js.map",
+    "main.js": "/static/js/main.fc648f38.chunk.js",
+    "main.js.map": "/static/js/main.fc648f38.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.881ef219.js",
     "runtime-main.js.map": "/static/js/runtime-main.881ef219.js.map",
     "static/js/2.dd2e0800.chunk.js": "/static/js/2.dd2e0800.chunk.js",
     "static/js/2.dd2e0800.chunk.js.map": "/static/js/2.dd2e0800.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.3357510e90ce487aac8d5c53cacfaf02.js": "/precache-manifest.3357510e90ce487aac8d5c53cacfaf02.js",
+    "precache-manifest.f4b4e2c51ff03191b45019dea56a0de9.js": "/precache-manifest.f4b4e2c51ff03191b45019dea56a0de9.js",
     "service-worker.js": "/service-worker.js",
     "static/js/2.dd2e0800.chunk.js.LICENSE.txt": "/static/js/2.dd2e0800.chunk.js.LICENSE.txt",
     "static/media/flower_left.png": "/static/media/flower_left.4a90763d.png",
     "static/media/flower_right.png": "/static/media/flower_right.2520d837.png",
-    "static/media/isak_ida_1.jpg": "/static/media/isak_ida_1.66de4281.jpg",
+    "static/media/isak_ida_1.jpg": "/static/media/isak_ida_1.f4f85562.jpg",
     "static/media/logga.0f11065e.svg": "/static/media/logga.0f11065e.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.881ef219.js",
     "static/js/2.dd2e0800.chunk.js",
-    "static/js/main.deaf25ac.chunk.js"
+    "static/js/main.fc648f38.chunk.js"
   ]
 }
