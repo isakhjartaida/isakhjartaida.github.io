@@ -5,17 +5,17 @@ import { makeStyles } from '@material-ui/core/styles';
 import Countdown from 'react-countdown';
 
 const useStyles = makeStyles((theme) => ({
-  peddana: {
-    fontFamily: ['Peddana, Roboto'],
-  },
   countdown: {
     fontFamily: ['Peddana, Roboto'],
     fontSize: 42,
-    lineHeight: 1
+    lineHeight: 1,
+    color: theme.palette.primary.dark,
   },
   bestDayEver: {
     fontFamily: ['Peddana, Roboto'],
     fontSize: 48,
+    lineHeight: 1,
+    color: theme.palette.primary.dark,
   }
 }));
 

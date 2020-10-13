@@ -9,6 +9,10 @@ const useStyles = makeStyles((theme) => ({
   date: {
     fontFamily: ['Peddana, Roboto'],
     fontSize: '4.75rem',
+    color: theme.palette.primary.dark,
+  },
+  logo: {
+    fill: theme.palette.primary.main,
   },
 }));
 
@@ -26,7 +30,7 @@ export default function NotifyMe() {
     >
       <HeaderImg />
 
-      <Logo />
+      <Logo className={classes.logo}/>
 
       <Typography
         variant="h2"
