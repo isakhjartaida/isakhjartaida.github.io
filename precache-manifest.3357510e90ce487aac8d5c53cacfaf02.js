@@ -1,23 +1,19 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "c5d86ba9e265cea961a26c465b076e2f",
+    "revision": "8e84b264e2268de44e71fa3906325fbb",
     "url": "/index.html"
   },
   {
-    "revision": "ac3f049e3f8d636f38bf",
-    "url": "/static/css/main.5ecd60fb.chunk.css"
-  },
-  {
-    "revision": "ec842dbeacbe613e6075",
-    "url": "/static/js/2.d8cbb20e.chunk.js"
+    "revision": "81a192c3171dd84eeb28",
+    "url": "/static/js/2.dd2e0800.chunk.js"
   },
   {
     "revision": "0749163b59fbee32225059cb60c18af6",
-    "url": "/static/js/2.d8cbb20e.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.dd2e0800.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "ac3f049e3f8d636f38bf",
-    "url": "/static/js/main.09588207.chunk.js"
+    "revision": "3b921703444bec1654f2",
+    "url": "/static/js/main.deaf25ac.chunk.js"
   },
   {
     "revision": "ab46ff065cb29bf1c716",
@@ -32,8 +28,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/flower_right.2520d837.png"
   },
   {
-    "revision": "72f675059ec79dbb38304f062f20dfe8",
-    "url": "/static/media/isak_ida_1.72f67505.jpg"
+    "revision": "66de428116b7d0aa9f81c6de9e7cc2aa",
+    "url": "/static/media/isak_ida_1.66de4281.jpg"
   },
   {
     "revision": "0f11065e3e0bd0efefbb42fec31bdef7",
