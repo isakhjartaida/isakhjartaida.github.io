@@ -3,9 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Box, Typography } from '@material-ui/core';
 
 import { ReactComponent as Logo } from 'assets/logga.svg';
-import HeaderImg from 'assets/isak_ida_1.jpg';
-//import FlowerLeft from 'assets/flower_left.png';
-//import FlowerRight from 'assets/flower_right.png';
+import HeaderImg from './HeaderImg';
 
 const useStyles = makeStyles((theme) => ({
   date: {
@@ -22,39 +20,11 @@ export default function NotifyMe() {
       minHeight="100vh"
       display="flex"
       alignItems="center"
+      justifyContent="center"
       flexDirection="column"
       width="100%"
     >
-      <Box
-        height={450}
-        padding={2}
-        display="flex"
-        alignItems="center"
-      >
-        <Box
-          marginRight="-29px"
-          height="100%"
-          zIndex={2}
-        >
-          
-        </Box>
-
-        <img
-          style={{border: '5px solid #FFF'}}
-          height={400}
-          src={HeaderImg}
-          alt="Isak och Ida"
-        />
-
-        <Box
-          marginLeft="-25px"
-          height="100%"
-          zIndex={2}
-        >
-          
-        </Box>
-
-      </Box>
+      <HeaderImg />
 
       <Logo />
 
