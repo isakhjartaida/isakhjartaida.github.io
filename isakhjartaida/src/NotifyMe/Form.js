@@ -1,8 +1,9 @@
 import React from 'react';
 import { Box, TextField, Button } from '@material-ui/core';
+import Skeleton from '@material-ui/lab/Skeleton';
 
 export default function Form(props) {
-  const { email, setEmail, setSendStatus } = props;
+  const { email, sendStatus, setEmail, setSendStatus } = props;
 
   return (
     <Box
@@ -24,6 +25,9 @@ export default function Form(props) {
         onChange={(e) => { setEmail(e.target.value) }}
       />
       <Box margin={2}>
+      { sendStatus === "send" ?
+        <Skeleton animation="wave" width={135} height={36} />
+      :
         <Button
           variant="contained"
           color="primary"
@@ -32,6 +36,7 @@ export default function Form(props) {
         >
           Meddela mig
         </Button>
+      }
       </Box>
     </Box>
   );

@@ -1,8 +1,9 @@
 import React, { useEffect, useState} from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import { Box, Typography, Paper } from '@material-ui/core';
-import Skeleton from '@material-ui/lab/Skeleton';
 import axios from 'axios';
+
+import { Drafts } from '@material-ui/icons';
 
 import Form from './Form';
 
@@ -40,13 +41,6 @@ export default function NotifyMe() {
 
   let EmailComponent = <></>;
   switch(sendStatus) {
-    case 'send':
-      EmailComponent = (
-        <Box>
-          <Skeleton />
-        </Box>
-      );
-      break;
     case 'sent':
       EmailComponent = (
         <Typography>
@@ -64,6 +58,7 @@ export default function NotifyMe() {
           </Box>
           <Form
             email={email}
+            sendStatus={sendStatus}
             setEmail={setEmail}
             setSendStatus={setSendStatus}
           />
@@ -74,6 +69,7 @@ export default function NotifyMe() {
       EmailComponent = (
         <Form
           email={email}
+          sendStatus={sendStatus}
           setEmail={setEmail}
           setSendStatus={setSendStatus}
         />
@@ -84,6 +80,8 @@ export default function NotifyMe() {
   return (
     <Box width="100%">
       <Paper className={classes.root}>
+        <Drafts color="primary" />
+
         <Box marginBottom={3}>
           <Typography>
             Fyll gärna i din mailadress för att få ett email när det finns ny information, tex. när OSA öppnar <span role="img" aria-label="Tada">🎉</span>
