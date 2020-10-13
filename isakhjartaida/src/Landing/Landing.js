@@ -4,8 +4,8 @@ import { Box, Typography } from '@material-ui/core';
 
 import { ReactComponent as Logo } from 'assets/logga.svg';
 import HeaderImg from 'assets/isak_ida_1.jpg';
-import FlowerLeft from 'assets/flower_left.png';
-import FlowerRight from 'assets/flower_right.png';
+//import FlowerLeft from 'assets/flower_left.png';
+//import FlowerRight from 'assets/flower_right.png';
 
 const useStyles = makeStyles((theme) => ({
   date: {
@@ -36,11 +36,7 @@ export default function NotifyMe() {
           height="100%"
           zIndex={2}
         >
-          <img
-            src={FlowerLeft}
-            alt="flower-left"
-            height={450}
-          />
+          
         </Box>
 
         <img
@@ -55,11 +51,7 @@ export default function NotifyMe() {
           height="100%"
           zIndex={2}
         >
-          <img
-            src={FlowerRight}
-            alt="flower-right"
-            height={450}
-          />
+          
         </Box>
 
       </Box>
