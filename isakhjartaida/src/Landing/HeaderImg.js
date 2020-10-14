@@ -18,7 +18,10 @@ export default function HeaderImg() {
         marginRight="-29px"
         height="100%"
         zIndex={2}
-        style={{ pointerEvents: 'none' }}
+        style={{
+          pointerEvents: 'none',
+          userSelect: 'none'
+        }}
       >
         <img	
           src={FlowerLeft}
@@ -40,7 +43,10 @@ export default function HeaderImg() {
         marginLeft="-25px"
         height="100%"
         zIndex={2}
-        style={{ pointerEvents: 'none' }}
+        style={{
+          pointerEvents: 'none',
+          userSelect: 'none'
+        }}
       >
         <img	
           src={FlowerRight}
