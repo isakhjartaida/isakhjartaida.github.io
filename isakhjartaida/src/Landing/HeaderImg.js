@@ -18,13 +18,13 @@ export default function HeaderImg() {
         marginRight="-29px"
         height="100%"
         zIndex={2}
+        style={{ pointerEvents: 'none' }}
       >
         <img	
           src={FlowerLeft}
           alt="flower-left"
           height={450}
           width={127}
-          style={{ pointerEvents: 'none' }}
         />
       </Box>
 
@@ -40,13 +40,13 @@ export default function HeaderImg() {
         marginLeft="-25px"
         height="100%"
         zIndex={2}
+        style={{ pointerEvents: 'none' }}
       >
         <img	
           src={FlowerRight}
           alt="flower-right"
           height={450}
           width={136}
-          style={{ pointerEvents: 'none' }}
         />
       </Box>
 
