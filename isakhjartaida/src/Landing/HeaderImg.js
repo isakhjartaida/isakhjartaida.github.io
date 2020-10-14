@@ -20,15 +20,18 @@ export default function HeaderImg() {
         zIndex={2}
       >
         <img	
-          src={FlowerLeft}	
-          alt="flower-left"	
-          height={450}	
+          src={FlowerLeft}
+          alt="flower-left"
+          height={450}
+          width={127}
+          style={{ pointerEvents: 'none' }}
         />
       </Box>
 
       <img
         style={{border: '5px solid #FFF'}}
         height={400}
+        width={270}
         src={image}
         alt="Isak och Ida"
       />
@@ -39,9 +42,11 @@ export default function HeaderImg() {
         zIndex={2}
       >
         <img	
-          src={FlowerRight}	
-          alt="flower-right"	
-          height={450}	
+          src={FlowerRight}
+          alt="flower-right"
+          height={450}
+          width={136}
+          style={{ pointerEvents: 'none' }}
         />
       </Box>
 
