@@ -6,6 +6,7 @@ import Theme from './Theme';
 import Landing from './Landing';
 import Time from './Time';
 import NotifyMe from './NotifyMe';
+import AddToCalendar from './AddToCalendar';
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
           <Landing />
 
           <Time />
+
+          <AddToCalendar />
 
           <NotifyMe />
 

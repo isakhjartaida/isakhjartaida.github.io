@@ -29,7 +29,6 @@ export default function Time() {
         flexDirection="column"
         justifyContent="center"
         alignItems="center"
-        marginBottom={4}
       >
         { days > 0 &&
           <Typography className={classes.countdown}>
