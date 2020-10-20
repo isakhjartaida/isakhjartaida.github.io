@@ -5,6 +5,8 @@ import { List, ListSubheader, ListItem, ListItemIcon, ListItemText } from '@mate
 
 import { AndroidOutlined, Apple, EventOutlined, EventAvailableOutlined } from '@material-ui/icons';
 
+import { ReactComponent as Flowers } from 'assets/krans.svg';
+
 const downloadICal = (data) => {
   let link = document.createElement('a');
   link.href = `data:text/calendar;charset=utf-8,${encodeURIComponent(data)}`;
@@ -59,15 +61,33 @@ export default function AddToCalendar() {
       marginTop={4}
       marginBottom={4}
     >
-      <Button
-        variant="contained"
-        onClick={()=>{setState(true)}}
-        startIcon={<EventAvailableOutlined />}
-        size="large"
-        className={classes.button}
+      <Box
+        position="relative"
       >
-        Save the date
-      </Button>
+        <Flowers
+          height={300}
+          width={400}
+        />
+
+        <Box
+          position="absolute"
+          bottom="80px"
+          left={0}
+          width={400}
+          display="flex"
+          justifyContent="center"
+        >
+          <Button
+            variant="contained"
+            onClick={()=>{setState(true)}}
+            startIcon={<EventAvailableOutlined />}
+            size="large"
+            className={classes.button}
+          >
+            Save the date
+          </Button>
+        </Box>
+      </Box>
 
       <Drawer
         anchor={'bottom'}
