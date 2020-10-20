@@ -15,13 +15,9 @@ export default function HeaderImg() {
       alignItems="center"
     >
       <Box
-        marginRight="-58px"
+        marginRight="-69px"
         height="100%"
         zIndex={2}
-        style={{
-          pointerEvents: 'none',
-          userSelect: 'none'
-        }}
       >
         <FlowerLeft
           alt="flower-left"
@@ -42,10 +38,6 @@ export default function HeaderImg() {
         marginLeft="-63px"
         height="100%"
         zIndex={2}
-        style={{
-          pointerEvents: 'none',
-          userSelect: 'none'
-        }}
       >
         <FlowerRight
           alt="flower-right"
