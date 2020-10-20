@@ -2,8 +2,8 @@ import React from 'react';
 import { Box } from '@material-ui/core';
 
 import image from 'assets/isak_ida_1.jpg';
-import FlowerLeft from 'assets/flower_left.png';
-import FlowerRight from 'assets/flower_right.png';
+import { ReactComponent as FlowerLeft } from 'assets/flower_left.svg';
+import { ReactComponent as FlowerRight } from 'assets/flower_right.svg';
 
 export default function HeaderImg() {
 
@@ -15,7 +15,7 @@ export default function HeaderImg() {
       alignItems="center"
     >
       <Box
-        marginRight="-29px"
+        marginRight="-58px"
         height="100%"
         zIndex={2}
         style={{
@@ -23,11 +23,10 @@ export default function HeaderImg() {
           userSelect: 'none'
         }}
       >
-        <img	
-          src={FlowerLeft}
+        <FlowerLeft
           alt="flower-left"
           height={450}
-          width={127}
+          width={170}
         />
       </Box>
 
@@ -40,7 +39,7 @@ export default function HeaderImg() {
       />
 
       <Box
-        marginLeft="-25px"
+        marginLeft="-63px"
         height="100%"
         zIndex={2}
         style={{
@@ -48,11 +47,10 @@ export default function HeaderImg() {
           userSelect: 'none'
         }}
       >
-        <img	
-          src={FlowerRight}
+        <FlowerRight
           alt="flower-right"
           height={450}
-          width={136}
+          width={150}
         />
       </Box>
 
