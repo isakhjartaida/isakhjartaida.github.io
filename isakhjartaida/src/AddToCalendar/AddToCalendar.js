@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Box, Button, Drawer } from '@material-ui/core';
 import { List, ListSubheader, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 
-import { AndroidOutlined, Apple, EventOutlined } from '@material-ui/icons';
+import { AndroidOutlined, Apple, EventOutlined, EventAvailableOutlined } from '@material-ui/icons';
 
 const downloadICal = (data) => {
   let link = document.createElement('a');
@@ -29,6 +29,10 @@ const useStyles = makeStyles((theme) => ({
   },
   icon: {
     color: theme.palette.primary.main,
+  },
+  button: {
+    color: theme.palette.primary.dark,
+    background: theme.palette.common.white,
   },
 }));
 
@@ -57,8 +61,10 @@ export default function AddToCalendar() {
     >
       <Button
         variant="contained"
-        color="primary"
         onClick={()=>{setState(true)}}
+        startIcon={<EventAvailableOutlined />}
+        size="large"
+        className={classes.button}
       >
         Save the date
       </Button>
