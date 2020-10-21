@@ -3,7 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 import { Box, Button, Drawer } from '@material-ui/core';
 import { List, ListSubheader, ListItem, ListItemIcon, ListItemText } from '@material-ui/core';
 
-import { AndroidOutlined, Apple, EventOutlined, EventAvailableOutlined } from '@material-ui/icons';
+import { AndroidOutlined, Apple, EventAvailableOutlined } from '@material-ui/icons';
 
 const downloadICal = (data) => {
   let link = document.createElement('a');
@@ -93,10 +93,6 @@ export default function AddToCalendar() {
             <ListItemText>Google</ListItemText>
           </ListItem>
 
-          <ListItem button key={'outlook'} onClick={() => {downloadICal(iCalData)}}>
-            <ListItemIcon className={classes.icon}><EventOutlined /></ListItemIcon>
-            <ListItemText>Outlook</ListItemText>
-          </ListItem>
         </List>
       </Drawer>
     </Box>
