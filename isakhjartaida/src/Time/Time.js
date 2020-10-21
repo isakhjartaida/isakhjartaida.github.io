@@ -30,14 +30,14 @@ export default function Time() {
         justifyContent="center"
         alignItems="center"
       >
-        { days > 0 &&
-          <Typography className={classes.countdown}>
-            {days} days until
-          </Typography>
-        }
         <Typography className={classes.bestDayEver}>
           BEST DAY EVER
         </Typography>
+        { days > 0 &&
+          <Typography className={classes.countdown}>
+            om {days} dag{ days > 1 && 'ar' }
+          </Typography>
+        }
       </Box>
     );
   };
