@@ -1,5 +1,4 @@
 import React, { useEffect, useState} from 'react';
-import { makeStyles } from '@material-ui/core/styles';
 import { Box, Typography, Paper } from '@material-ui/core';
 import axios from 'axios';
 
@@ -19,15 +18,7 @@ const postGoogleForm = (email, setSendStatus) => {
   });
 }
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    padding: theme.spacing(2),
-  },
-}));
-
 export default function NotifyMe() {
-  const classes = useStyles();
-
   const [email, setEmail] = useState(undefined);
   const [sendStatus, setSendStatus] = useState(undefined);
 
@@ -79,16 +70,19 @@ export default function NotifyMe() {
 
   return (
     <Box width="100%">
-      <Paper className={classes.root}>
-        <Drafts color="primary" />
+      <Paper>
+        <Box padding={2}>
+          <Drafts color="primary" />
 
-        <Box marginBottom={3}>
-          <Typography>
-            Fyll gärna i din mailadress för att få ett email när det finns ny information, tex. när OSA öppnar <span role="img" aria-label="Tada">🎉</span>
-          </Typography>
+          <Box marginBottom={3}>
+            <Typography>
+              Fyll gärna i din mailadress för att få ett email när det finns ny information, tex. när OSA öppnar <span role="img" aria-label="Tada">🎉</span>
+            </Typography>
+          </Box>
+
+          { EmailComponent }
+
         </Box>
-
-        { EmailComponent }
       </Paper>
     </Box>
   );
