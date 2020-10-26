@@ -43,7 +43,9 @@ export default function Time() {
   };
 
   return (
-    <Box>
+    <Box
+      marginBottom={10}
+    >
       <Countdown
         date={'2021-07-17'}
         renderer={renderer}

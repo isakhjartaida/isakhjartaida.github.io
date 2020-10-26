@@ -18,6 +18,13 @@ const theme = createMuiTheme({
       main: '#f8d3c5',
     },
   },
+  overrides: {
+    MuiLink: {
+      root: {
+        fontWeight: 700,
+      }
+    },
+  },
 });
 
 function Theme(props) {
