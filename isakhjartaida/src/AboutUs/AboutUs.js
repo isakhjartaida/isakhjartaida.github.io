@@ -33,7 +33,7 @@ export default function AboutUs() {
             </Typography>
             <Typography>
               För det vackra läget, men också för alla fina sommarnätter vi spenderat här.
-              Under flera år har sommarens höjdpunkt varit när parken har fyllts till bredden med härligt folk som dansat tills solen gått upp.
+              Under flera år har sommarens höjdpunkt varit när parken fyllts till bredden med härligt folk som dansat tills solen gått upp.
             </Typography>
             <Typography paragraph>
               Vi hoppas kunna ta tillbaka den känslan för en kväll!
