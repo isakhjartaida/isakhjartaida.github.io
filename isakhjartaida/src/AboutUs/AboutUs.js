@@ -21,7 +21,7 @@ export default function AboutUs() {
             </Typography>
             
             <Typography>
-              För vissa av er kanske detta kommer som en chock, medan vissa tycker att det är hög tid.
+              För vissa kanske det kommer som en chock, medan andra tycker att det är hög tid.
             </Typography>
             <Typography paragraph>
               Spela roll! Klart ni ska vara en del utav vår stora dag <span role="img" aria-label="smiling_face_with_hearts">🥰</span>
