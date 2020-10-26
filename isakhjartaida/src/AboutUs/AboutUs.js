@@ -40,8 +40,7 @@ export default function AboutUs() {
             </Typography>
             
             <Typography>
-              <span role="img" aria-label="sparkles">✨ </span>
-              Bröllopet kommer spenderas utomhus, både vigsel och fest. Vi ber till alla vädergudar att vädret kommer vara på vår sida.
+              Bröllopet kommer spenderas utomhus, både vigsel och fest. Vi ber till alla vädergudar att vädret kommer vara på vår sida <span role="img" aria-label="sun_with_face">🌞</span>
             </Typography>
           </Box>
         </Paper>
