@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box } from '@material-ui/core';
+import { Box, Paper } from '@material-ui/core';
 
 import image from 'assets/isak_ida_1.jpg';
 import { ReactComponent as FlowerLeft } from 'assets/flower_left.svg';
@@ -26,13 +26,16 @@ export default function HeaderImg() {
         />
       </Box>
 
-      <img
-        style={{border: '5px solid #FFF'}}
-        height={400}
-        width={270}
-        src={image}
-        alt="Isak och Ida"
-      />
+      <Paper>
+        <Box padding={1}>
+          <img
+            height={400}
+            width={270}
+            src={image}
+            alt="Isak och Ida"
+          />
+        </Box>
+      </Paper>
 
       <Box
         marginLeft="-63px"
@@ -45,7 +48,6 @@ export default function HeaderImg() {
           width={150}
         />
       </Box>
-
     </Box>
   );
 }
