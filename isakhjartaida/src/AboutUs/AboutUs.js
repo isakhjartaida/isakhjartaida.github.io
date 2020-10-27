@@ -53,12 +53,32 @@ export default function AboutUs() {
           alignItems="center"
           height="100%"
         >
-          <Box width="100%">
-            <video poster={image} autoPlay playsInline muted loop width="100%" style={{border: "5px solid #FFF"}}>
-              <source src={video} type="video/mp4" />
-              Your browser does not support the video tag.
-            </video>
-          </Box>
+          <Paper
+            style={{height: "100%"}}
+          >
+            <Box
+              height="100%"
+              padding={1}
+            >
+              <video
+                poster={image}
+                disableremoteplayback="true"
+                autoPlay
+                playsInline
+                muted
+                loop
+                height="100%"
+                width="100%"
+                style={{
+                  pointerEvents: "none",
+                  objectFit: "cover",
+                }}
+              >
+                <source src={video} type="video/mp4" />
+                Your browser does not support the video tag.
+              </video>
+            </Box>
+          </Paper>
         </Box>
       </Grid>
     </Grid>
