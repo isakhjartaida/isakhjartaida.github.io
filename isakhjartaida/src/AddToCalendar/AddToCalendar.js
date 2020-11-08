@@ -27,13 +27,6 @@ const useStyles = makeStyles((theme) => ({
   root: {
     background: theme.palette.secondary.light,
   },
-  icon: {
-    color: theme.palette.primary.main,
-  },
-  button: {
-    color: theme.palette.primary.dark,
-    background: theme.palette.common.white,
-  },
 }));
 
 export default function AddToCalendar() {
@@ -65,6 +58,7 @@ export default function AddToCalendar() {
         startIcon={<EventAvailableOutlined />}
         size="large"
         className={classes.button}
+        color="primary"
       >
         Save the date
       </Button>

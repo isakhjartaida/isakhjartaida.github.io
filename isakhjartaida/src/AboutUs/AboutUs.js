@@ -16,7 +16,7 @@ export default function AboutUs() {
             <Typography component="div" paragraph>
               <Box fontWeight="fontWeightBold">
                 <span role="img" aria-label="revolving_hearts">💞 </span>
-                Efter 9 år tillsammans har vi bestämt oss för att gifta oss!
+                Efter nästan 10 år tillsammans har vi bestämt att gifta oss!
               </Box>
             </Typography>
             
