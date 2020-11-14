@@ -39,8 +39,14 @@ export default function AboutUs() {
               Vi hoppas kunna ta tillbaka den känslan för en kväll!
             </Typography>
             
-            <Typography>
+            <Typography paragraph>
               Bröllopet kommer spenderas utomhus, både vigsel och fest. Vi ber till alla vädergudar att vädret kommer vara på vår sida <span role="img" aria-label="sun_with_face">🌞</span>
+            </Typography>
+
+            <Typography component="div" variant="h4" fontWeight="fontWeightBold">
+              <Box textAlign="center">
+                #isakhjärtaida
+              </Box>
             </Typography>
           </Box>
         </Paper>
