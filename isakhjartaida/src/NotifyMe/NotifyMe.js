@@ -6,7 +6,7 @@ import { Drafts } from '@material-ui/icons';
 
 import Form from './Form';
 
-const FORM_URL = 'https://cors-anywhere.herokuapp.com/https://docs.google.com/forms/d/e/1FAIpQLSfQC24BD9tqflJVnVsth96TFfZkhrFzAxdkMfTVjJ9loFCYow/formResponse';
+const FORM_URL = 'https://cors-is-bull.herokuapp.com/https://docs.google.com/forms/d/e/1FAIpQLSfQC24BD9tqflJVnVsth96TFfZkhrFzAxdkMfTVjJ9loFCYow/formResponse';
 
 const postGoogleForm = (email, setSendStatus) => {
   let data = new FormData();
