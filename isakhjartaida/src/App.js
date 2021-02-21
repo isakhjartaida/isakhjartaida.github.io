@@ -8,6 +8,7 @@ import Time from './Time';
 import NotifyMe from './NotifyMe';
 import AddToCalendar from './AddToCalendar';
 import AboutUs from './AboutUs';
+import Update1 from './Update1';
 
 function App() {
   return (
@@ -19,6 +20,8 @@ function App() {
           <Landing />
 
           <Time />
+
+          <Update1 />
 
           <AboutUs />
 
