@@ -1,4 +1,5 @@
 import React from 'react';
+import axios from 'axios';
 
 import { Container, Box } from '@material-ui/core';
 
@@ -10,7 +11,22 @@ import AddToCalendar from './AddToCalendar';
 import AboutUs from './AboutUs';
 import Update1 from './Update1';
 
+const base = () => {
+  const req = axios.create({
+    baseURL: "https://cors-is-bull.herokuapp.com/",
+  });
+
+  return req;
+};
+
+const ping = () => {
+  const api = base();
+  return api.get("/");
+};
+
 function App() {
+  ping();
+
   return (
     <Theme>
       <Box overflow="hidden">
