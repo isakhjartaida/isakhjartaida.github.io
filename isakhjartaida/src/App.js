@@ -10,6 +10,7 @@ import NotifyMe from './NotifyMe';
 import AddToCalendar from './AddToCalendar';
 import AboutUs from './AboutUs';
 import Update1 from './Update1';
+import Toasts from './Toasts';
 
 const base = () => {
   const req = axios.create({
@@ -36,6 +37,8 @@ function App() {
           <Landing />
 
           <Time />
+
+          <Toasts />
 
           <Update1 />
 

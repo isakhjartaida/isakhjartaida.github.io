@@ -6,6 +6,9 @@ export default function Update1() {
     <Box width="100%" marginBottom={5}>
       <Paper>
         <Box padding={2}>
+          <Typography component="div" variant="caption" paragraph>
+            2021-02-20
+          </Typography>
           <Typography component="div" paragraph>
             Tänk att nu är det mindre än 150 dagar kvar tills vi får säga JA.
           </Typography>
