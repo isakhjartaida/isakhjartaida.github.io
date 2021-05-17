@@ -10,7 +10,7 @@ export default function Update2() {
             2021-05-17
           </Typography>
           <Typography component="div">
-            Regeringen och folkhälsomyndigheten har nu gått ut med restriktionerna för sommaren.
+            Regeringen och folkhälsomyndigheten har gått ut med restriktionerna för sommaren.
           </Typography>
           <Typography component="div">
             Vi håller just nu på att se över hur vi ska få ihop vårt drömbröllop och samtidigt hålla oss inom lagen.
