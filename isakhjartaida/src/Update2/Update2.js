@@ -13,7 +13,7 @@ export default function Update2() {
             Regeringen och folkhälsomyndigheten har nu gått ut med restriktionerna för sommaren.
           </Typography>
           <Typography component="div">
-            Vi håller just nu på att se över hur vi ska få ihop vårt drömbröllop och samtidigt hållas oss inom lagen.
+            Vi håller just nu på att se över hur vi ska få ihop vårt drömbröllop och samtidigt hålla oss inom lagen.
           </Typography>
           <Typography component="div">
             Håll utkik här, så kommer vi snart meddela er. Ta hand om er <span role="img" aria-label="red-heart">❤️</span>
