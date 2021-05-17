@@ -11,6 +11,7 @@ import AddToCalendar from './AddToCalendar';
 import AboutUs from './AboutUs';
 import Update1 from './Update1';
 import Toasts from './Toasts';
+import Update2 from './Update2';
 
 const base = () => {
   const req = axios.create({
@@ -37,6 +38,8 @@ function App() {
           <Landing />
 
           <Time />
+
+          <Update2 />
 
           <Toasts />
 
