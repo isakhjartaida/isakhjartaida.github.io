@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Grid, Box, Paper, Typography, Avatar } from '@material-ui/core';
+import { Grid, Box, Paper, Typography, Avatar, Link } from '@material-ui/core';
 
 import filippa_img from 'assets/filippa.jpeg';
 import julia_img from 'assets/julia.jpeg';
@@ -26,12 +26,10 @@ export default function Toasts() {
             Vi har tagit hjälp av två av våra fantastiska vänner för att förgylla vår dag!
           </Typography>
           <Typography component="div">
-            Det är dessa personer som ni senare kommer kontakta om ni vill hålla tal eller liknande på vårt bröllop.
+            Det är dessa personer som ni kontaktar om ni vill hålla tal, spexa eller hitta på andra upptåg under middagen.
           </Typography>
-          <Typography component="div" variant="">
-            <Box fontStyle="italic">
-              Mer om den informationen kommer senare.
-            </Box>
+          <Typography component="div">
+            Kontakt: <Link color="inherit" href="mailto:toastmadames@isakhjartaida.se">toastmadames@isakhjartaida.se</Link>
           </Typography>
         </Box>
         
@@ -54,12 +52,12 @@ export default function Toasts() {
                 />
               </Box>
               
-              <Typography paragraph>
+              <Typography paragraph component="div">
                 <Box fontWeight="fontWeightBold" textAlign="center">
                   Filippa Jansson
                 </Box>
               </Typography>
-              <Typography paragraph>
+              <Typography paragraph component="div">
                 Brudens barndomsvän som just nu pluggar till jurist i Uppsala.
                 Ida och Filippa gick under högstadiet som helan och halvan.
               </Typography>
@@ -83,12 +81,12 @@ export default function Toasts() {
                   src={julia_img}
                 />
               </Box>
-              <Typography paragraph>
+              <Typography paragraph component="div">
                 <Box fontWeight="fontWeightBold" textAlign="center">
                   Julia Linnros
                 </Box>
               </Typography>
-              <Typography paragraph>
+              <Typography paragraph component="div">
                 Brudparets barndomsvän som dansat sig genom livet via musikskolor och underhållningsjobb på varmare breddgrader.
                 Julia är en varm och omtänksam person som alltid får andra att må bra.
               </Typography>
