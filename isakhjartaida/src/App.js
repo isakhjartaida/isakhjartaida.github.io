@@ -9,7 +9,6 @@ import Time from './Time';
 import NotifyMe from './NotifyMe';
 import AddToCalendar from './AddToCalendar';
 import AboutUs from './AboutUs';
-import Update1 from './Update1';
 import Toasts from './Toasts';
 import Invitation from './Invitation';
 
@@ -39,15 +38,13 @@ function App() {
 
           <Time />
 
+          <AddToCalendar />
+
           <Invitation />
 
           <Toasts />
 
-          <Update1 />
-
           <AboutUs />
-
-          <AddToCalendar />
 
           <NotifyMe />
 

@@ -34,9 +34,9 @@ export default function AddToCalendar() {
   const [state, setState] = useState(false);
 
   const title = "Isak ❤️ Ida";
-  const desc = "Save the date for the BEST DAY EVER!";
-  const start = "20210716T220000Z";
-  const end = "20210717T215959Z";
+  const desc = "BEST DAY EVER!";
+  const start = "20210717T133000Z";
+  const end = "20210718T050000Z";
   const location = "Ängsholns folkpark, Ängsholsvägen 24, 785 30 Gagnef";
 
   const googleBase = `https://calendar.google.com/calendar/render?action=TEMPLATE`;
@@ -60,7 +60,7 @@ export default function AddToCalendar() {
         className={classes.button}
         color="primary"
       >
-        Save the date
+        Lägg till i kalender
       </Button>
 
       <Drawer
