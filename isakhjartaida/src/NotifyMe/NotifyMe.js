@@ -76,7 +76,7 @@ export default function NotifyMe() {
 
           <Box marginBottom={3}>
             <Typography>
-              Fyll gärna i din mailadress för att få ett email när det finns ny information, tex. när OSA öppnar <span role="img" aria-label="Tada">🎉</span>
+              Fyll gärna i din mailadress för att få ett email när det finns ny information <span role="img" aria-label="Tada">🎉</span>
             </Typography>
           </Box>
 
