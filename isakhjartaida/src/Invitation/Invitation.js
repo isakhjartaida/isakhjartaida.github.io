@@ -1,7 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-import { Box, Paper, Typography, Button, Link } from '@material-ui/core';
-import { Assignment } from '@material-ui/icons/';
+import { Box, Paper, Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({
   cormorant: {
@@ -77,23 +76,6 @@ export default function Invitation() {
           </Typography>
           <Typography className={classes.cormorant} component="div" align="center" paragraph>
             Om ni önskar ge ytterligare en gåva, kontakta Sussie Nellfors på 073 - 755 38 08 för önskelista.
-          </Typography>
-
-          <Box align="center" padding={2}>
-            <Link target="_blank" href="https://forms.gle/fv8pebWU6M8u22d97">
-              <Button
-                size="large"
-                variant="contained"
-                startIcon={<Assignment />}
-                color="primary"
-              >
-                OSA
-              </Button>
-            </Link>
-          </Box>
-
-          <Typography className={classes.cormorant} component="div" align="center">
-            OSA senast 20 juni
           </Typography>
         </Box>
       </Paper>
